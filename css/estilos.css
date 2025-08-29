@@ -1,0 +1,157 @@
+/* Fuente global */
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  background-color: #f7f3ea; 
+  color: #2c2c2c;
+  line-height: 1.7;
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 3rem 1rem;
+  background: linear-gradient(135deg, #e0d6c8, #d4c2a8);
+  color: #222;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+
+header p {
+  margin: 0.5rem 0 1rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+header nav a {
+  margin: 0 1rem;
+  text-decoration: none;
+  font-weight: 600;
+  color: #222;
+  transition: color 0.3s ease;
+}
+
+header nav a:hover {
+  color: #6b4f34;
+}
+
+/* Secciones */
+section {
+  padding: 2.5rem 5%;
+}
+
+h2 {
+  margin-bottom: 1rem;
+  font-weight: 700;
+  color: #333;
+}
+
+/* Cards y grid */
+.card {
+  background: #fff;
+  padding: 1.8rem;
+  border-radius: 14px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  margin-bottom: 2rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+/* Hover efecto */
+.hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.hover:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+}
+
+.card img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+/* Contacto */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form input, form textarea {
+  margin-bottom: 1rem;
+  padding: 0.9rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+button {
+  padding: 0.9rem;
+  border: none;
+  border-radius: 8px;
+  background: #6b4f34;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+button:hover {
+  background: #8a6748;
+}
+
+.social {
+  margin-top: 1rem;
+  font-weight: 600;
+}
+
+.social a {
+  text-decoration: none;
+  color: #6b4f34;
+  margin: 0 0.5rem;
+}
+
+.social a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  background: #e0d6c8;
+  font-size: 0.9rem;
+}
+
+.card img {
+  max-width: 300px;
+  height: auto;
+  display: block;
+  margin: 0 auto 1rem;
+}
+/* Sección Proyectos */
+#proyectos {
+  padding: 2.5rem 5%;
+}
+
+#proyectos .grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 2rem;
+}
+
+
+@media (max-width: 900px) {
+  #proyectos .grid {
+    grid-template-columns: 1fr; 
+  }
+}
